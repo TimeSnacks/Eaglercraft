@@ -1,0 +1,257 @@
+<!-- Ultimate Game Stash file--> 
+<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
+<!-- made by genizy -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <base href="https://cdn.jsdelivr.net/gh/genizy/dmad-poki@49b5ab6b987f5f3be58f9dae59c92e8fc1aab9b0/">
+  <script>
+  window.assgdd = {
+    "ancestorOrigins": {
+        "0": "https://games.poki.com",
+        "1": "https://poki.com"
+    },
+    "href": "https://f9564e4e-ef25-4e4b-ba67-cb11a1576bbd.poki-gdn.com/cc1bc57a-e355-4696-97c2-097bf6188606/index.html?country=US&url_referrer=https%3A%2F%2Fpoki.com%2F&site_id=3&iso_lang=en&poki_url=https%3A%2F%2Fpoki.com%2Fen%2Fg%2Fdrive-mad&hoist=yes&nonPersonalized=n&cloudsavegames=n&familyFriendly=n&categories=78%2C93%2C96%2C103%2C377%2C390%2C400%2C893%2C929%2C1126%2C1139%2C1140%2C1141%2C1143%2C1147%2C1163%2C1185%2C1190%2C1193%2C1197&special_condition=landing&game_id=f9564e4e-ef25-4e4b-ba67-cb11a1576bbd&game_version_id=cc1bc57a-e355-4696-97c2-097bf6188606&inspector=0",
+    "origin": "https://f9564e4e-ef25-4e4b-ba67-cb11a1576bbd.poki-gdn.com",
+    "protocol": "https:",
+    "host": "f9564e4e-ef25-4e4b-ba67-cb11a1576bbd.poki-gdn.com",
+    "hostname": "f9564e4e-ef25-4e4b-ba67-cb11a1576bbd.poki-gdn.com",
+    "port": "",
+    "pathname": "/cc1bc57a-e355-4696-97c2-097bf6188606/index.html",
+    "search": "?country=US&url_referrer=https%3A%2F%2Fpoki.com%2F&site_id=3&iso_lang=en&poki_url=https%3A%2F%2Fpoki.com%2Fen%2Fg%2Fdrive-mad&hoist=yes&nonPersonalized=n&cloudsavegames=n&familyFriendly=n&categories=78%2C93%2C96%2C103%2C377%2C390%2C400%2C893%2C929%2C1126%2C1139%2C1140%2C1141%2C1143%2C1147%2C1163%2C1185%2C1190%2C1193%2C1197&special_condition=landing&game_id=f9564e4e-ef25-4e4b-ba67-cb11a1576bbd&game_version_id=cc1bc57a-e355-4696-97c2-097bf6188606&inspector=0",
+    "hash": ""
+}
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>Drive Mad</title>
+  <meta name="description" content="">
+  <meta name="google" content="notranslate">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="webapp/fancade.css">
+  <link rel="icon" href="webapp/favicon.ico">
+
+  <!-- POKI SDK -->
+  <script src="poki-sdk.js" ></script>
+
+  <style>
+    #gameBanner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(135deg, #ff0080 0%, #ff8c00 50%, #ffd700 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #gameBanner h1 {
+      color: #fff;
+      font-size: 56px;
+      font-weight: bold;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.3);
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    #startScreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1e90ff 0%, #00bfff 50%, #00ced1 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    #startScreen h1 {
+      color: #fff;
+      font-size: 48px;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    #startScreen p {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 50px;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    #startScreen a {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    #startScreen a:hover {
+      opacity: 0.8;
+    }
+
+    #startButton {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 20px 60px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+      transform: scale(1);
+    }
+
+    #startButton:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 30px rgba(102, 126, 234, 0.8);
+    }
+
+    #startButton:active {
+      transform: scale(0.95);
+    }
+
+    #gameBlocker {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9998;
+      pointer-events: all;
+    }
+  </style>
+</head>
+
+<body id="body">
+
+  <!-- Game Blocker -->
+  <div id="gameBlocker"></div>
+
+  <!-- Game Banner -->
+  <div id="gameBanner">
+    <h1>DRIVE MAD</h1>
+  </div>
+
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <h1>Drive Mad</h1>
+    <p>This game was ported by Aiden Frey</p>
+    <button id="startButton">Start Gaming!</button>
+    <p><a href="mailto:2013492@apps.nsd.org">Send ME some game requests!</a></p>
+  </div>
+
+  <!-- Modal dialog div -->
+  <div id="modal_parent">
+    <div id="modal_content">
+      <span id="modal_close_button">&times;</span>
+      <div id="store_link_modal_content" class="modal_inner"></div>
+      <div id="share_file_modal_content" class="modal_inner"></div>
+    </div>
+  </div>
+
+  <!-- 
+      Game canvas and overlay. Emscripten makes some assumptions about how the canvas is positioned in order
+      to translate document to game coordinates
+    -->
+  <div id="canvas_border" class="emscripten_border">
+    <div id="play_content" class="middle center">
+      <div class="edge">
+        <div class="box">
+          <div class="black">
+            <img src="webapp/cover.jpg" class="cover">
+            <p class="title">Drive Mad</p>
+            <p class="author">Fancade</p>
+          </div>
+        </div>
+      </div>
+      <div id="progress_or_play">
+        <progress id="progress" class="loading" value="0" max="100"></progress>
+      </div>
+      <p class="description"></p>
+    </div>
+    <canvas class="emscripten" id="canvas" tabindex=-1>
+    </canvas>
+    <div id="gradient"></div>
+    <div id="webview_content"></div>
+  </div>
+
+  <!-- Manual JS, Called from WASM -->
+  <script type="text/javascript" src="webapp/source_min.js"></script>
+
+  <!-- Auto generated JS -->
+  <script type="text/javascript" src="webapp/index.js"></script>
+
+  <script>
+    var gameStarted = false;
+    var gameBlocker = document.getElementById('gameBlocker');
+    var startButton = document.getElementById('startButton');
+    
+    // Block all keyboard input while title screen is visible
+    function blockInput(e) {
+      if (!gameStarted) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    }
+    
+    // Add keyboard event listeners to block input on title screen
+    window.addEventListener('keydown', blockInput, true);
+    window.addEventListener('keyup', blockInput, true);
+    window.addEventListener('keypress', blockInput, true);
+    
+    startButton.addEventListener('click', function() {
+      gameStarted = true;
+      document.getElementById('startScreen').style.display = 'none';
+      document.getElementById('gameBanner').style.display = 'none';
+      
+      // Remove the blocker to allow game interaction
+      gameBlocker.style.display = 'none';
+      
+      // Focus the canvas to ensure keyboard input works
+      var canvas = document.getElementById('canvas');
+      if (canvas) {
+        canvas.focus();
+      }
+      
+      // Ensure canvas is interactive
+      if (canvas) {
+        canvas.tabIndex = 1;
+      }
+    });
+    
+    // Add mouse enter/leave effects for better hover feedback
+    startButton.addEventListener('mouseenter', function() {
+      if (!gameStarted) {
+        this.style.transform = 'scale(1.15)';
+      }
+    });
+    
+    startButton.addEventListener('mouseleave', function() {
+      if (!gameStarted) {
+        this.style.transform = 'scale(1)';
+      }
+    });
+  </script>
+</body>
+
+</html>
